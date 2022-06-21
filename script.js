@@ -30,7 +30,27 @@ var cartaPikachu = {
   
   var cartaMaquina;
   var cartaJogador;
-  var cartas = [cartaPikachu, cartaBulbassauro, cartaCharmander];
+  var cartas = [
+    cartaPikachu, 
+    cartaBulbassauro, 
+    cartaCharmander/*,
+    cartaSquirtle,
+    cartaCaterpie,
+    cartaWeedle,
+    cartaPidgey,
+    cartaRattata,
+    cartaFearow,
+    cartaEkans,
+    cartaNidoran,
+    cartaClefairy,
+    cartaJigglypuff,
+    cartaZubat,
+    cartaOddish,
+    cartaMeowth,
+    cartaPoliwag,
+    cartaGrowlithe,
+    cartaOnix,*/
+  ];
   
   function sortearCarta() {
     var numeroCartaMaquina = parseInt(Math.random() * 3);
