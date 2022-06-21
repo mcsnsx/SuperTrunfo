@@ -1,45 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@400;900&family=Press+Start+2P&display=swap');
+
 body {
-    font-family: "Roboto Mono", monospace;
-    min-height: 854px;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png");
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/813b6b5a-d48f-4d22-aa23-bb84ac52ccb6/d5c6eql-10a04956-ab30-463f-88a6-27afa9f85eb9.jpg");
     background-color: #000000;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
-    padding-bottom: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
   }
   
   .container {
     text-align: center;
-    padding: 20px;
   }
   
   .page-title {
     color: #ffffff;
-    margin: 5px 0;
+    margin: 5px 5px 20px 20px;
+    font-size: 18px;
+  }
+
+  .page-logo{
+    width: 350px;
   }
   
   button,
   .button-jogar {
     padding: 0.8rem 1.5rem;
-    margin: 1rem 0;
     border-radius: 5px;
-    border: none;
     font-size: 1rem;
+    background-color: #f0c91b;
+    font-weight: 700;
   }
+
   
   h2 {
     color: white;
+    font-size: 18px;
   }
   
   #carta-jogador,
   #carta-maquina {
-    width: 360px;
-    height: 500px;
+    width: 350px;
+    height: 470px;
     overflow: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin: 0 auto;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -48,6 +58,8 @@ body {
     background-position-x: 5px;
     background-position-y: 10px;
     border-radius: 33px;
+    margin-right:30px;
+    margin-left: 30px;
   }
   
   #carta-jogador h3 {
@@ -66,10 +78,11 @@ body {
   }
   
   .carta-status {
-    height: 160px;
-    margin: 2rem;
+    height: 145px;
+    margin: 2.5rem;
     color: white;
     z-index: 2;
+    
   }
   
   .carta-status input {
@@ -83,7 +96,7 @@ body {
     font-weigth: bolder;
     padding: 1rem;
     border: 2px solid black;
-    background-color: black;
+    background-color: rgb(253, 5, 5);
   }
   
   .--spacing {

@@ -1,13 +1,13 @@
-var cartaPaulo = {
-    nome: "Shiryu de Dragão",
+var cartaPikachu = {
+    nome: "Pikachu",
     imagem: "https://s.aficionados.com.br/imagens/shiryu.jpg",
     atributos: {
-      Ataque: 5,
-      Defesa: 9,
-      Magia: 10
+      Ataque: 80,
+      Defesa: 40,
+      Magia: 60
     }
   };
-  var cartaRafa = {
+  var cartaBulbassauro = {
     nome: "Bulbassauro",
     imagem: "https://www.creativeuncut.com/gallery-09/art/pmdbrt-bulbasaur.jpg",
     atributos: {
@@ -17,8 +17,8 @@ var cartaPaulo = {
     }
   };
   
-  var cartaGui = {
-    nome: "Darth Vader",
+  var cartaCharmander = {
+    nome: "Charmander",
     imagem:
       "https://disneyplusbrasil.com.br/wp-content/uploads/2021/06/Darth-Vader-serie-Disney-Plus-1024x576.jpg",
     atributos: {
@@ -30,7 +30,7 @@ var cartaPaulo = {
   
   var cartaMaquina;
   var cartaJogador;
-  var cartas = [cartaPaulo, cartaRafa, cartaGui];
+  var cartas = [cartaPikachu, cartaBulbassauro, cartaCharmander];
   
   function sortearCarta() {
     var numeroCartaMaquina = parseInt(Math.random() * 3);
