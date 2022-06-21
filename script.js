@@ -27,14 +27,25 @@ var cartaPikachu = {
       Magia: 2
     }
   };
+
+  var cartaSquirtle = {
+    nome: "Squirtle",
+    imagem:
+      "https://disneyplusbrasil.com.br/wp-content/uploads/2021/06/Darth-Vader-serie-Disney-Plus-1024x576.jpg",
+    atributos: {
+      Ataque: 90,
+      Defesa: 80,
+      Magia: 20
+    }
+  };
   
   var cartaMaquina;
   var cartaJogador;
   var cartas = [
     cartaPikachu, 
     cartaBulbassauro, 
-    cartaCharmander/*,
-    cartaSquirtle,
+    cartaCharmander,
+    cartaSquirtle/*,
     cartaCaterpie,
     cartaWeedle,
     cartaPidgey,
@@ -53,15 +64,15 @@ var cartaPikachu = {
   ];
   
   function sortearCarta() {
-    var numeroCartaMaquina = parseInt(Math.random() * 3);
+    var numeroCartaMaquina = parseInt(Math.random() * cartas.length);
     cartaMaquina = cartas[numeroCartaMaquina];
   
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = parseInt(Math.random() * cartas.length);
     while (numeroCartaJogador == numeroCartaMaquina) {
-      numeroCartaJogador = parseInt(Math.random() * 3);
+      numeroCartaJogador = parseInt(Math.random() * cartas.length);
     }
   
-    cartaJogador = cartas[0];
+    cartaJogador = cartas[numeroCartaJogador];
     console.log(cartaJogador);
   
     document.getElementById("btnSortear").disabled = true;
