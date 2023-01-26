@@ -22,9 +22,9 @@ var cartaPikachu = {
     imagem:
       "https://i.pinimg.com/originals/dc/75/b9/dc75b96b4141c0a0f5d2658b084e170b.png",
     atributos: {
-      Ataque: 10,
-      Defesa: 40,
-      Magia: 10
+      Ataque: 90,
+      Defesa: 60,
+      Magia: 30
     }
   };
 
